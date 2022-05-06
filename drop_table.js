@@ -9,7 +9,7 @@ var con = mysql.createConnection({
 
 con.connect(function(err) {
     if (err) throw err;
-    var sql = "DROP TABLE customers";
+    var sql = "DROP TABLE alunos";
     con.query(sql, function (err, result) {
       if (err) throw err;
       console.log("Table deleted");
